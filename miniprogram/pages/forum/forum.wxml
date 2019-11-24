@@ -1,0 +1,24 @@
+<!-- miniprogram/pages/forum/forum.wxml -->
+<view class="tab-wrapper" bindtap="setActive">
+		<view class="tab-item {{isActive == 0 ? 'tab-item-active' : ''}}" data-index="0">公告</view>
+		<view class="tab-item {{isActive == 1 ? 'tab-item-active' : ''}}" data-index="1">名人墙</view>
+		<view class="tab-item {{isActive == 2 ? 'tab-item-active' : ''}}" data-index="2">家风家训</view>
+		<view class="tab-item-line" animation="{{animationData}}"></view>
+</view>
+<view class="tab-content {{isActive == 0 ? 'show' : 'hide'}}">1</view>
+<view class="tab-content {{isActive == 1 ? 'show' : 'hide'}}">
+		<block wx:for="{{wallsList}}" wx:key="{{index}}">
+				<view class="box">
+						<image src="{{item.avatar}}" mode="aspectFill" bindtap="play"></image>
+						<view class="sub-title">{{item.subTitle}}</view>
+				</view>
+		</block>
+</view>
+<view class="tab-content {{isActive == 2 ? 'show' : 'hide'}}">
+	<block>
+		<view class="jiafeng">
+			<image src="{{jiafengjiaxun.image}}"></image>
+			<text class="title" space="ensp" >{{jiafengjiaxun.title}}</text>
+		</view>
+	</block>
+</view>

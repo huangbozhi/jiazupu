@@ -1,0 +1,39 @@
+<!--miniprogram/pages/index/index.wxml-->
+<!-- http://img5.imgtn.bdimg.com/it/u=3925552757,1000644004&fm=26&gp=0.jpg -->
+<block wx:for="{{lists}}" wx:key="{{index}}">
+  <view class="container">
+    <view class="top-box">
+      <view class="avatar">
+       <image class="image" src="{{item.avatar}}" mode="aspectFit"  binderror="" bindload="" />
+      </view>
+      <text class="name">{{item.name}}</text>
+      <view class="logo">
+        <text class="xing">{{item.xing}}</text>
+      </view>
+      <view class="icon-close">
+        <image class="close" src="../../images/close.png"></image>
+      </view>
+    </view>
+    <view class="contentBox">
+      <view class="title">{{item.title}}</view>
+      <view class="content" wx:if="{{item.isImg}}">
+        <image class="content-image" src="{{item.img}}"></image>
+      </view>
+      <view class="content" wx:else>
+        <view class="text">
+          <text class="sub-title">{{item.subTitle}}</text>
+        </view>
+      </view>
+      <view class="buttom">
+        <view class="share">
+          <image src="../../images/share.png"></image>
+        </view>
+        <text class="share-text">分享</text>
+        <view class="message">
+          <image src="../../images/message.png"></image>
+        </view>
+        <text class="command">{{item.command}}</text>
+      </view>
+    </view>
+  </view>
+</block>

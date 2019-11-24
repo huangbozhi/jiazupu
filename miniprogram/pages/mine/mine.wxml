@@ -1,0 +1,41 @@
+<!-- miniprogram/pages/mine/mine.wxml -->
+<view class="header">
+  <view class="avatar">
+    <image src="http://img5.imgtn.bdimg.com/it/u=3925552757,1000644004&fm=26&gp=0.jpg"></image>
+  </view>
+  <view class="icon"></view>
+  <view class="name">赵凯</view>
+  <view class='arrow_left_container'>
+    <image class="arrow_left" src="../../images/arraw-left.png"></image>
+  </view>
+</view>
+<view class="body">
+  <!-- <view class='body-top'> -->
+  <view class='setting-wrapper box '>
+    <view class='image-icon'>
+      <image class="icons" src="../../images/setting.png"></image>
+    </view>
+    <view class='setting-text'>设置</view>
+  </view>
+  <view class='box history-wrapper'>
+    <view class='image-icon'>
+      <image class="icons" src="../../images/history.png"></image>
+    </view>
+    <view class='history-text'>浏览历史</view>
+  </view>
+  <!-- </view> -->
+  <!-- <view class='body-bottom'> -->
+  <view class='box helper-wrapper'>
+    <view class='image-icon'>
+      <image class="icons" src="../../images/kefu.png"></image>
+    </view>
+    <view class='helper-text'>客服</view>
+  </view>
+  <view class='box message-wrapper'>
+    <view class='image-icon'>
+      <image class="icons" src="../../images/message.png"></image>
+    </view>
+    <view class='message-text'>消息</view>
+  </view>
+  <!-- </view> -->
+</view>
